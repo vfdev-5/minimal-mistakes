@@ -20,7 +20,7 @@ words_per_minute         : 200
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
-    shortname            : "vfdev" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname            : "https-vfdev-5-github-io" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -82,14 +82,14 @@ author:
   bio              : # "A curious person"
   location         : # "Somewhere"
   email            : "vfdev.5 at gmail"
-  uri              : "https://www.kaggle.com/vfdev5"
+  uri              :
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
   facebook         :
   foursquare       :
-  github           : "vfdev-5"  
+  github           : "vfdev-5"
   google_plus      :
   keybase          :
   instagram        :
