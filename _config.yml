@@ -7,14 +7,14 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "5 - Dev For liVe"
+title                    : "Notes & Insights"
 title_separator          : "-"
-name                     : "vfdev-5"
-description              : "Notes & Insights"
+name                     : &name "vfdev-5"
+description              : &description "..."
 url                      : "https://vfdev-5.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "assets/images/forest-deepdream.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -77,19 +77,19 @@ analytics:
 
 # Site Author
 author:
-  name             : "vfdev-5"
+  name             : *name
   avatar           : "assets/images/bio-photo.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "A curious person"
-  location         : "Somewhere"
+  bio              : # "A curious person"
+  location         : # "Somewhere"
   email            : "vfdev.5 at gmail"
-  uri              :
+  uri              : "https://www.kaggle.com/vfdev5"
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://github.com/vfdev-5"
+  github           : "vfdev-5"  
   google_plus      :
   keybase          :
   instagram        :
@@ -111,6 +111,7 @@ author:
 include:
   - .htaccess
   - _pages
+  - _posts
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -172,8 +173,8 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+#paginate: 5 # amount of posts to show
+#paginate_path: /page:num/
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
@@ -241,6 +242,13 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
-      share: true
+      comments: true
+      share: # true
       related: true
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true

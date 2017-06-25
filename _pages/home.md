@@ -1,4 +1,5 @@
 ---
+author_profile: true
 layout: splash
 permalink: /
 header:
@@ -9,7 +10,6 @@ header:
 excerpt: 'Personal site to keep public my computer science tryouts and experiments.
           Click [here](/year-archive/) to explore posts.'
 ---
-
 {% include group-by-array collection=site.posts field="tags" %}
 
 {% for tag in group_names %} `{{ tag }}` {% endfor %}
