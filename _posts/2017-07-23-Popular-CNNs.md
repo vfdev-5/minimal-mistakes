@@ -19,12 +19,11 @@ Idea is to provide a simple visual representation and develop an intuition of ea
 ```
 --[block]-- 
 ```
-If block reduces input feature maps size, an arrow is drawn:
+- If block reduces input feature maps size, an arrow is drawn:
 ```
 --[block]-->
 ```
-
-A block of convolution, followed by batch normalization, relu and pooling can be also represented as 
+- A block of convolution, followed by batch normalization, relu and pooling can be also represented as 
 ```
 --[C|BN|R|P]-->
 ```
@@ -86,9 +85,9 @@ input ---[C|R|P]-->[F2]--[F3]--[P]-->[F4]--[F5]--[P]--->[F6]--[F7]--[F8]--[F9]--
  stride=(2,2)(2,2)            (2,2)             (2,2)
 
                 /--[C|R]-----\
-                |            |
+                |  1x1       |
 [F] = ---[C|R]--*--[C|R]--[concat]---
-    
+         1x1       3x3  
 ```
 
 
