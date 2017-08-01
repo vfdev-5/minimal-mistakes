@@ -1,5 +1,5 @@
 ---
-title: "How it could looks like to work with remote machine"
+title: "How it could look like to work with remote machine"
 categories:
   - remote-machine
 tags:
