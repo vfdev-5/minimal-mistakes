@@ -1,5 +1,5 @@
 ---
-title: "How it could look like to work with remote machine"
+title: "How could it look like to work with remote machine"
 categories:
   - remote-machine
 tags:
@@ -9,8 +9,8 @@ tags:
   - Jupyter Notebook
 ---
 
-This post gathers my notes on how to simplify developement work on remote machine. 
-There is a bunch of various methods on this, I choose one the simpliest for me: `sshfs`.
+This post gathers my notes on how to simplify development work on a remote machine. 
+There is a bunch of various methods on this, I choose one, the simpliest for me: `sshfs`.
 
 My context is the following:
 ```
