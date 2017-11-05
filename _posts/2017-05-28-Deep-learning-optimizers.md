@@ -45,6 +45,13 @@ RMS (^2) = Mean square gradient
 A <- rho * A + (1 - rho) * G^2
 theta <- theta - lr * G / (sqrt(A) + eps)
 ```
+- Reference: T. Tieleman and G. Hinton.   Divide the gradient by a running average of its recent magnitude.  COURSERA: Neural Networks for Machine Learning, 4, 2012.
+
+In lot of papers (e.g. [[1]](https://arxiv.org/pdf/1512.00567v3.pdf) or [[2]](https://arxiv.org/pdf/1707.07012.pdf)) authors use this optimizer with parameters: 
+```
+rho = 0.9
+eps = 1.0
+```
 
 ## AdaDelta = gradient proportional previous update over RMS
 
@@ -74,4 +81,15 @@ M <- beta_1 * M + (1 - beta_1) * G
 theta <- theta - lr * M / (sqrt(A) + eps)
 ```
 
-Checkout available [optimizers](https://github.com/fchollet/keras/blob/master/keras/optimizers.py) in Keras.
+Default parameters : 
+```
+beta_1 = 0.9 
+beta_2 = 0.999
+eps = 1e-8
+```
+and choosing `beta_1 = 0.0` we obtain RMSProp optimization.
+
+## Links:
+- Checkout available [optimizers](https://github.com/fchollet/keras/blob/master/keras/optimizers.py) in Keras.
+- Checkout [optimizers](http://pytorch.org/docs/master/optim.html#algorithms) in PyTorch.
+
